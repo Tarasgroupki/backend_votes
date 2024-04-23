@@ -1,0 +1,12 @@
+﻿{
+    "server": {
+      "host": "127.0.0.1",
+      "port": 2700,
+      "path": null
+    },
+    "mongodb": {
+      "username": "admin",
+      "password": "admin",
+      "uri": "localhost:27017"
+    }
+}

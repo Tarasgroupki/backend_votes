@@ -1,0 +1,109 @@
+{
+	"info": {
+		"_postman_id": "1de416ce-cd63-4eb3-b44b-7af2e4bc22cb",
+		"name": "test back",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "get all",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:2700/api/questions",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "2700",
+					"path": [
+						"api",
+						"questions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "vote on answer",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"questionId\": \"6627be873bb7f5449cbe95ff\",\r\n    \"answerText\": \"No\",\r\n    \"answerId\": \"6627be873bb7f5449cbe95fc\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:2700/api/questions/vote",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "2700",
+					"path": [
+						"api",
+						"questions",
+						"vote"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create question",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"questionText\": \"What do you think about Andular?\",\r\n    \"type\": \"poll\",\r\n    \"answersList\": [\r\n        \"Beatiful lib.\",\r\n        \"Good for enterptise\",\r\n        \"Have own philosofy\"\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:2700/api/questions",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "2700",
+					"path": [
+						"api",
+						"questions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get question by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:2700/api/questions/6627be873bb7f5449cbe95ff",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "2700",
+					"path": [
+						"api",
+						"questions",
+						"6627be873bb7f5449cbe95ff"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

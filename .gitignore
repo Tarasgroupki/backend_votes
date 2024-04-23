@@ -1,0 +1,4 @@
+/node_modules
+/mongo-entrypoint
+/.idea
+/package-lock.json
